@@ -1,0 +1,10 @@
+---
+language: objective-c
+
+script:
+  - brew audit ./Formula/*.rb
+  - brew install -v ./Formula/*.rb
+  - brew test ./Formula/*.rb
+
+notifications:
+  email: false
