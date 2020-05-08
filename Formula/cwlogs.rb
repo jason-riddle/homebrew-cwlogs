@@ -2,24 +2,24 @@
 class Cwlogs < Formula
   desc "Easily query groups, streams and events from Amazon Cloudwatch Logs."
   homepage "https://github.com/jason-riddle/cwlogs"
-  version "0.0.1"
+  version "0.0.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/jason-riddle/cwlogs/releases/download/v0.0.1/cwlogs_darwin_amd64.tar.gz"
-    sha256 "36a431f370a0e1a38965adf3ef56a778a5b5aa0d7f6b090807ff6ab2af22d6aa"
+    url "https://github.com/jason-riddle/cwlogs/releases/download/v0.0.2/cwlogs_v0.0.2_darwin_amd64.tar.gz"
+    sha256 "c07fa7ca9194631ac3683af6d25fd214af078557f15d0f0f81753c19918155dc"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/jason-riddle/cwlogs/releases/download/v0.0.1/cwlogs_linux_amd64.tar.gz"
-      sha256 "211b1be818cbe5893c0599eeccade06c15f742166de1419a84d5ae09f64c03a9"
+      url "https://github.com/jason-riddle/cwlogs/releases/download/v0.0.2/cwlogs_v0.0.2_linux_amd64.tar.gz"
+      sha256 "3de47f6db206c86f81ae8ccd41a1371a35ff505165d3d441da822ba38d8cebf2"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jason-riddle/cwlogs/releases/download/v0.0.1/cwlogs_linux_arm64.tar.gz"
-        sha256 "4801b6230852a4596fbbeb9435502b55eecb299ba87cfb24d301ea8e0ee1f2a8"
+        url "https://github.com/jason-riddle/cwlogs/releases/download/v0.0.2/cwlogs_v0.0.2_linux_arm64.tar.gz"
+        sha256 "3d237d7f054389408abbf838ef770f523c53b52e0b1f86f72f7778a0b1035ef1"
       else
-        url "https://github.com/jason-riddle/cwlogs/releases/download/v0.0.1/cwlogs_linux_armv6.tar.gz"
-        sha256 "401d039cf5b3a94b59968655e550a5586036e6c01636761b4e6e2c8670f5d823"
+        url "https://github.com/jason-riddle/cwlogs/releases/download/v0.0.2/cwlogs_v0.0.2_linux_armv6.tar.gz"
+        sha256 "364bfab1c51525167f7e2383b00986697769a77a6c7d116d676fac8e1c512791"
       end
     end
   end
