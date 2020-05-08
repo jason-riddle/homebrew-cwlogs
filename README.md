@@ -3,6 +3,5 @@
 Homebrew Formulae for https://github.com/jason-riddle/cwlogs.
 
 ```sh
-brew tap jason-riddle/cwlogs
-brew install cwlogs
+brew install jason-riddle/homebrew-cwlogs/cwlogs
 ```
